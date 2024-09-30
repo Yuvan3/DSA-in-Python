@@ -8,14 +8,15 @@ def binary_search(arr, target):
         if arr[middle] == target:
             return middle # Target found, return index
         elif arr[middle] < target:
-            left = middle + 1
+            left = middle + 1  # Search in the right half
         else:
-            right = middle - 1
-    return -1        
+            right = middle - 1  # Search in the left half
+
+    return -1  # Target not found
 
 # Example usage
 arr = [1, 3, 5, 7, 9, 11]
-target = 12
+target = 7
 result = binary_search(arr, target)
 
 if result != -1:
