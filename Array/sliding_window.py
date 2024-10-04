@@ -2,7 +2,6 @@
 # Minimum Size Subarray Sum
 
 def min_subarray_len(target, nums):
-    left = 0
     min_len = 1000000000
     current_sum = 0
     left = 0
